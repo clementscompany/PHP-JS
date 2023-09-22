@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardInformation{
+    position: relative;
+    width: calc(100% - 100px);
+    height: 400px;
+    border: 1px solid #00000034;
+    border-radius: 3px;
+}
+.topCard{
+    background-color: #000007d8;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+.addNew{
+    padding: 12px;
+    border-bottom: 1px solid #00000034;
+}
+.addButton{
+    width: 160px;
+    height: 33px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(202, 201, 201);
+    font-weight: 100;
+    color: #000000d5;
+}.addButton:hover{
+    background-color:rgb(224, 224, 224) ;
+}
+.bottomCard{
+    position: relative;
+    width: 100%;
+    height: 290px;
+}
+.listOrder{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonS{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.buttonS button{
+    border: none;
+    width: 100px;
+    height: 33px;
+    border-radius: 3px;   
+    cursor: pointer;
+}
+.editar{
+    background-color: dodgerblue;
+    color: #fff;
+}.editar:hover{
+    background-color: rgba(30, 143, 255, 0.87);
+}
+.deletar{
+    background-color: red;
+    color: #fff;
+}.deletar:hover{
+    background-color: rgba(255, 0, 0, 0.836);
+}
+.listOption{
+    background-color: #e0e2e633 ;
+    margin: 3px auto;
+}
+
+
+.theList{
+    width: 100%;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width:700px) {
+    *{
+      font-size: 12pt;
+    }
+    .cardInformation{
+        width: calc(100% - 10px);
+        height: 500px;
+        border: 1px solid #0000004f;
+    } 
+}
+
+/* janela Modal */
+
+.modalCadastro{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000048;
+    backdrop-filter: blur(22px);
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modalCadastro.active{
+    display: flex;
+}
+.formCadastrate{
+   background-color: #fff;
+   width: 450px;
+   height: 500px;
+   border-radius: 3px;
+}
+.topCadastro{
+    background-color: #000007d8;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    position: relative;
+}
+.center{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    padding: 12px;
+}
+.VoltarBtn{
+  position: absolute;
+  left: 12px;
+  width: 60px;
+  height: 20px;
+  background-color: #0000004f;
+  border: none;
+  color: #181717;
+ border-radius: 3px;
+ cursor: pointer;
+}
+
+.inputBox{
+    width: calc(100% - 12px);
+    height: 40px;
+    margin: 0 auto;
+}
+.inputBox label{
+    color: #181717a9;
+}
+.inputBox input{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00000034;
+  padding: 0 12px;
+  border-radius: 4px;
+  outline: none;
+}.inputBox input:focus{
+    outline: 2px  solid rgba(40, 131, 223, 0.507);
+}
+.formData{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.SendBtn{
+    width: calc(100% - 12px);
+    height: 44px;
+    border: none;
+    background-color: #181717;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 22px;
+}
+.errorMessage{
+    padding: 5px 25px;
+    border-radius: 3px;
+}
+
+/*  */
+.sectionAlert{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00000048;
+    backdrop-filter: blur(22px);
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:12;
+}
+.sectionAlert.active{
+    display: flex;
+}
+.options{       
+    background-color: #fff;
+    padding: 12px;
+    width: 320px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display:flex;
+    border-radius: 3px;
+    gap: 12px;
+}
+
+.options article{
+    text-align: center;
+    color: rgba(245, 32, 32, 0.918);
+}
+.clickButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+.clickButtons > button{
+    width: 100px;
+    height: 33px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.clickButtons > button:hover{
+    opacity: 0.5;
+}
+.eliminar{
+    background-color: rgba(255, 97, 97, 0.651);
+    color: red;
+}
+.cancelar{
+    background-color: rgba(22, 148, 22, 0.534);
+    color: green;
+}
+
+.confitmBtn{
+    background-color: rgba(22, 148, 22, 0.534);
+    color: green; 
+    display: none;
+}
+
+.spamDelete{
+    padding:12px 22px;
+    background-color: rgba(255, 97, 97, 0.651);
+    color: red;
+}
+
+
+
+/* editModal */
+
+/* editModal */
+
+.editModal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #3b3b3b48;
+    backdrop-filter: blur(22px);
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;  
+}
+.editModal.active{
+    display: flex;
+}
+.contentEdit{
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: #fff;
+}
+.topEdit{
+    position: relative;
+    background-color: #000007d8;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+}
+.topEdit button{
+    position: absolute;
+    left: 12px;
+    background-color: #c9c3c3bb;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; 
+}.topEdit button:hover{
+    color: dodgerblue;
+}
+.FormInputUpdate{
+    width: 600px;
+    margin: 22px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+@media screen and (max-width: 700px) {
+    .contentEdit{
+        width: calc(100% - 10px);
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .FormInputUpdate{
+        width: 100%;
+        margin: 22px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+.EnviarBtnUpload{
+    background-color: #000000d5;
+    color: #fff;
+    font-weight: bold;
+    cursor:pointer;
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+
+}
+
