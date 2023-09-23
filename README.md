@@ -1,6 +1,6 @@
 # PHP-JS
 Este repositório foi criado para poder armazenar o meu crud feito com php e js! 
-Tipos de Bancos de dados competiveis: MySQL
+Tipos de Bancos de dados compativeis: MySQL
 Conexão com o banco de dados: Através do arquivo config.php
 Não tem uma base de dados criada... 
 você precisa criar uma! 
