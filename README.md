@@ -8,9 +8,11 @@ você precisa criar uma!
 os dados são actualizados, deletados e Actualizados Em tempo real, não é necessário fazer um refresh! Espero que goste 🤩
 
 não se esqueça de criar uma data base e adicionar com as tabelas! 
-user,(
+users
+,(
  id 
  user
+ pass
  nivel 
  obs
  data_validade
