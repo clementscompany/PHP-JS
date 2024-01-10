@@ -8,6 +8,7 @@ você precisa criar uma!
 os dados são actualizados, deletados e Actualizados Em tempo real, não é necessário fazer um refresh! Espero que goste 🤩
 
 não se esqueça de criar uma data base e adicionar com as tabelas! 
+```hs
 users
 ,(
  id 
@@ -17,4 +18,6 @@ users
  obs
  data_validade
 
-) e alterar a variavel de coxexão no arquivo config.php
+) ```
+
+- e alterar a variavel de coxexão no arquivo config.php
