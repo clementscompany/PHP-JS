@@ -20,4 +20,4 @@ users
 
 ) ```
 
-- e alterar a variavel de coxexão no arquivo config.php
+- e alterar a variavel de conexão no arquivo config.php
